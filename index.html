@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-        let timeline = document.querySelector('#postInput');
+        let timeline = document.querySelector('#timeline');
 
         function snsPost() {
             const postValue = document.querySelector('#postInput').value
@@ -16,7 +16,9 @@
             timeline.innerHTML += '<div id = "timeline">'+
             '<div class="container">'+
             '<h1>이예진</h1>'+
-            '<div class="fakeimg">'+'<p>'+postValue+'</p>'+'</div>'+
+            '<div class="fakeimg">'+
+            '<p>'+ postValue+'</p>'+
+            '</div>'+
             '</div>'+
             '</div>';
         }
@@ -92,7 +94,8 @@
     </div>
     
     <footer>
-        여기는 푸터
+        <p>https://doyor1719.github.io/mysns/</p>
+        <p>instagram <a href="https://www.instagram.com/s_9782/?hl=ko">https://www.instagram.com/s_9782/?hl=ko"</a>
 
     </footer>
 
