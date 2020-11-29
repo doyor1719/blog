@@ -7,22 +7,6 @@
     <title>Yejin's blog</title>
 </head>
 <body>
-    <script>
-        let timeline = document.querySelector('#timeline');
-
-        function snsPost() {
-            const postValue = document.querySelector('#postInput').value
-            console.log(postValue);
-            timeline.innerHTML += '<div id = "timeline">'+
-            '<div class="container">'+
-            '<h1>녜진</h1>'+
-            '<div class="fakeimg">'+
-            '<p>'+ postValue+'</p>'+
-            '</div>'+
-            '</div>'+
-            '</div>';
-        }
-    </script>
     <div class="header">
         <h1>Yejin's blog</h1>
         <p>
@@ -98,6 +82,23 @@
         <p>instagram <a href="https://www.instagram.com/s_9782/?hl=ko">https://www.instagram.com/s_9782/?hl=ko"</a>
 
     </footer>
+    
+    <script>
+        let timeline = document.querySelector('#timeline');
+
+        function snsPost() {
+            const postValue = document.querySelector('#postInput').value
+            console.log(postValue);
+            timeline.innerHTML += '<div id = "timeline">'+
+            '<div class="container">'+
+            '<h1>녜진</h1>'+
+            '<div class="fakeimg">'+
+            '<p>'+ postValue+'</p>'+
+            '</div>'+
+            '</div>'+
+            '</div>';
+        }
+    </script>
 
 </body>
 </html>
