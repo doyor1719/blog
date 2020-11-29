@@ -7,6 +7,22 @@
     <title>Yejin's blog</title>
 </head>
 <body>
+    <script>
+        let timeline = document.querySelector('#timeline');
+
+        function snsPost() {
+            const postValue = document.querySelector('#postInput').value
+            console.log(postValue);
+            timeline.innerHTML += '<div id = "timeline">'+
+            '<div class="container">'+
+            '<h1>이예진</h1>'+
+            '<div class="fakeimg">'+
+            '<p>'+ postValue+'</p>'+
+            '</div>'+
+            '</div>'+
+            '</div>';
+        }
+    </script>
     <div class="header">
         <h1>Yejin's blog</h1>
         <p>
@@ -48,10 +64,13 @@
        
     <div class="content">
         <div class="leftcontent">
-            <div class="card" style="height: 300px;">
-                <p>2020's</p>
-               
+            <div class="card" id="timeline">
+                <div class="container">
+                    <textarea name="" id="postInput" cols="100" row="10"></textarea>
+                    <button onclick="snsPost()">작성</button>
+                </div>
             </div>
+           
             <div class="card" style="height: 500px;">
                 내용2
             </div>
@@ -61,10 +80,8 @@
             <div class="card" style="height: 150px;">
                 instagram account
                 <p>
-                
                     <a href="https://www.instagram.com/s_9782/?hl=ko">s_9782</a></p>
                 <p>
-                   
                     <a href="https://www.instagram.com/_z_in_03/?hl=ko">_z_in_03</a></p>
 
             </div>
