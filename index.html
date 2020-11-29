@@ -7,6 +7,20 @@
     <title>Yejin's blog</title>
 </head>
 <body>
+    <script>
+        let timeline = document.querySelector('#postInput');
+
+        function snsPost() {
+            const postValue = document.querySelector('#postInput').value
+            console.log(postValue);
+            timeline.innerHTML += '<div id = "timeline">'+
+            '<div class="container">'+
+            '<h1>이예진</h1>'+
+            '<div class="fakeimg">'+'<p>'+postValue+'</p>'+'</div>'+
+            '</div>'+
+            '</div>';
+        }
+    </script>
     <div class="header">
         <h1>Yejin's blog</h1>
         <p>
@@ -48,12 +62,13 @@
        
     <div class="content">
         <div class="leftcontent">
-            <div class="card" style="height: 300px;">
-                <p>2020's</p>
-                <img src="1.jpg" width="200" height="200">
-                <img src="2.jpg" width="200" height="200">
-                <img src="3.jpg" width="200" height="200">
+            <div class="card" id="timeline">
+                <div class="container">
+                    <textarea name="" id="postInput" cols="100" row="10"></textarea>
+                    <button onclick="snsPost()">작성</button>
+                </div>
             </div>
+           
             <div class="card" style="height: 500px;">
                 내용2
             </div>
@@ -63,10 +78,8 @@
             <div class="card" style="height: 150px;">
                 instagram account
                 <p>
-                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzAzMTRfNzcg%2FMDAxNDg5NDg3Mzg1MTMz.208BuwBSx9_wbks6RaePzi3hyzKvSoKqBrZgVOGzWNUg.DOm48N2aEX2qkgFWOeduX_vEhljnO8nwrnjUONTRfckg.JPEG.kdh0074%2F20160512143009392460_99_20160512143304.jpg&type=sc960_832" width="20" height="20">
                     <a href="https://www.instagram.com/s_9782/?hl=ko">s_9782</a></p>
                 <p>
-                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzAzMTRfNzcg%2FMDAxNDg5NDg3Mzg1MTMz.208BuwBSx9_wbks6RaePzi3hyzKvSoKqBrZgVOGzWNUg.DOm48N2aEX2qkgFWOeduX_vEhljnO8nwrnjUONTRfckg.JPEG.kdh0074%2F20160512143009392460_99_20160512143304.jpg&type=sc960_832" width="20" height="20">
                     <a href="https://www.instagram.com/_z_in_03/?hl=ko">_z_in_03</a></p>
 
             </div>
