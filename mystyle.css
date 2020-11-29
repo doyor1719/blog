@@ -102,3 +102,31 @@ a:link {
     text-decoration: none;
     color: black;
 }
+#timeline .card{
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+    padding: 20px;
+    border-radius: 5px;
+    transition: box-shadow .5s;
+}
+
+#timeline .card:hover {
+    box-shadow: 1px 1px 30px rgba(0,0,0,.5);
+}
+
+#timeline .card h3 {
+    margin:0;
+}
+
+#timeline .card p {
+    margin:15px 0 0 0;
+}
+
+#timeline .card .card_content h3 {font-size:18px}
+#timeline .card .card_content h3 img {
+    border-radius: 15px;
+    margin-right:10px;
+    border:1px solid #ddd;
+    widows: 30px;
+    vertical-align: middle;
+}
+#timeline .card .card_content>img {width:100%; margin-top: 15px;}
