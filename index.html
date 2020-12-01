@@ -50,12 +50,21 @@
         <div class="leftcontent">
             <div class="card" id="timeline">
                 <div class="container">
-                    <textarea name="" id="postInput" cols="100" row="10"></textarea>
+                    <textarea name="" id="postInput" cols="70" row="10"></textarea>
                     <button onclick="snsPost()">작성</button>
                 </div>
             </div>
-            <div class="card" style="height: 700px;">
+            <div class="card" style="height: 1100px;">
                 <h2>Time-Line</h2>
+                <section id="timeline">
+                    <article class="card">
+                        <div class="card_content">
+                            <h3><img src="KakaoTalk_20201128_114231847.jpg" width="50" alt="">녜진</h3>
+                            <p>곧 크리스마스!</p>
+                            <img src="https://64.media.tumblr.com/e2543638969091b77eca60356621dffc/tumblr_oipk2gC11k1rge4fho1_500.gifv" alt="">
+                        </div>
+                    </article>
+                </section>
                 <section id="timeline">
                     <article class="card">
                         <div class="card_content">
@@ -69,11 +78,12 @@
         
         </div>
         <div class="rightcontent">
-            <div class="card" style="height: 150px;">
-                내용3
+            <div class="card" style="height: 250px;">
+                <h6><img src="KakaoTalk_20201128_114231847.jpg" width="150" height="150" alt=""></h6>
+                <br>이예진(_z_in_03)
             </div>
-            <div class="card" style="height: 650px;">
-               내용 4
+            <div class="card" style="height: 920px;">
+               
             </div>
             
         </div>
@@ -95,7 +105,7 @@
             console.log(postValue);
             timeline.innerHTML += '<div id = "timeline">'+
             '<div class="container">'+
-            '<h1>녜진</h1>'+
+            '<h4>녜진</h4>'+
             '<div class="fakeimg">'+
             '<p>'+ postValue+'</p>'+
             '</div>'+
