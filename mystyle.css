@@ -131,3 +131,12 @@ a:link {
     vertical-align: middle;
 }
 #timeline .card .card_content>img {width:100%; margin-top: 15px;}
+
+.subject{
+ color: rgb(41, 37, 37); 
+ text-decoration: underline;
+ 
+ font-weight: 700;
+ font-size: large;
+}
+
