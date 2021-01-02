@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="recordst.css">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
     <title>Yejin's blog</title>
 </head>
 <body>
     <div class="header">
         <h1>Yejin's blog</h1>
-        <p><a herf="C:\Users\최현선\Desktop\동아리 연계\index.html">블로그 입니다.</a></p>
+        <p>
+            <a herf="C:\Users\최현선\Desktop\동아리 연계\index.html">블로그 입니다.</a></p>
     </div>
     <nav>
         <ul>
@@ -40,28 +41,106 @@
             <li class="dropdown">
                 <div class="dropdown-menu">Music</div>
             </li>
-        </ul>
-    </nav>
     
+        </ul>
+
+    </nav>
+       
     <div class="content">
         <div class="leftcontent">
-            <div class="card" style="height: 1000px">
-                내용1
+            
+            <div class="card" style="height: 350px;">
+                <h5><img src="https://blogpfthumb-phinf.pstatic.net/MjAyMDEyMDJfMTU0/MDAxNjA2ODM1NjU5MzIy.qHt01UOte6O4jD883BSyTIvsa79hpIqurQHT7PTuBQsg.U81cALdZhF-fpdTsn-p1rVrhHLY3mAq3ExwSDZenmG0g.JPEG.doyor1719/KakaoTalk_20201128_114231847.jpg?type=w161"width="180"></h5>
+                <p style="font-size :20px">녜진(_z_in_03)</p>
+                instagram main s_9782
+                instagram sub _z_in_03
             </div>
-        </div>
+            <div class="card" style="height: 2120px;">
+                <p style="font-size :20px">Post
+                    <p><span class="subject">daily life</span>
+                    <p><span class="subject">Movies</span>
+                    <p><span class="subject">books</span>
+                    <p><span class="subject">ect.</span>
+                    </p>
+                <p style="font-size :20px">Picture
+                    <p><span class="subject">Fashion</span>
+                    <p><span class="subject">Exhibition</span>
+                    <p><span class="subject">Record</span>
+
+                </p>
+                <p style="font-size :20px">Videos
+                    <p><span class="subject">Vlog</span>
+                    <p><span class="subject">Others</span>
+                        
+                </p>
+                    
+               
+            </div>
+        
         </div>
         <div class="rightcontent">
-            <div class="card" style="height: 1000px">
-                내용2
+            <div class="card" style="height: 85px;">      
+                <div class="card" id="timeline">
+                    <div class="container">
+                        <textarea name="" id="postInput" cols="70" row="10"></textarea>
+                        <button onclick="snsPost()">작성</button>
+                    </div>
+                </div>
             </div>
+            <div class="card" style="height: 2385px;">
+                <section id="timeline">
+                    <article class="card">
+                        <div class="card_content">
+                            <h3><img src="KakaoTalk_20201128_114231847.jpg" width="50" alt="">녜진</h3>
+                            <img src="KakaoTalk_20210101_230728725_01.jpg" alt="">
+                        </div>
+                    </article>
+                </section>
+                <section id="timeline">
+                    <article class="card">
+                        <div class="card_content">
+                            <h3><img src="KakaoTalk_20201128_114231847.jpg" width="50" alt="">녜진</h3>
+                            <img src="KakaoTalk_20210101_230728725_02 copy.jpg" alt="">
+                        </div>
+                    </article>
+                </section>
+                <section id="timeline">
+                    <article class="card">
+                        <div class="card_content">
+                            <h3><img src="KakaoTalk_20201128_114231847.jpg" width="50" alt="">녜진</h3>
+                            <img src="KakaoTalk_20210101_230728725.jpg" alt="">
+                        </div>
+                    </article>
+                </section>
+            </div>
+            
         </div>
 
     </div>
+    
     <footer>
-        여기는 푸터
+        <p>https://doyor1719.github.io/blog/</p>
+        <p>instagram 1 <a href="https://www.instagram.com/s_9782/?hl=ko">s_9782</a></p></a>
+        <p>instagram 2 <a href="https://www.instagram.com/_z_in_03/?hl=ko">_z_in_03</a></p>
 
     </footer>
 
+    <script>
+        let timeline = document.querySelector('#timeline');
+
+        function snsPost() {
+            const postValue = document.querySelector('#postInput').value
+            console.log(postValue);
+            timeline.innerHTML += '<div id = "timeline">'+
+            '<div class="container">'+
+            '<h4>녜진</h4>'+
+            '<div class="fakeimg">'+
+            '<p>'+ postValue+'</p>'+
+            '</div>'+
+            '</div>'+
+            '</div>';
+        }
+    </script>
 
 </body>
 </html>
